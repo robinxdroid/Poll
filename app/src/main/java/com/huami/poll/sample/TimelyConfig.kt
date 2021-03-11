@@ -24,7 +24,6 @@ object TimelyConfig {
     fun getThreadNum(): Int {
         // 约定上传接口超时为30（秒）的情况下
         // 轮询间隔（秒）
-        val period = PERIOD / 1000
-        return (UPLOAD_TIMEOUT / period).toInt()
+        return (UPLOAD_TIMEOUT / PERIOD).toInt()
     }
 }
