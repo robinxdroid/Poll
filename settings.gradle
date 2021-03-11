@@ -1,0 +1,3 @@
+include ':job'
+include ':app'
+rootProject.name = "Poll"
